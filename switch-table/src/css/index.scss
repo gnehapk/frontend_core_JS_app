@@ -1,0 +1,171 @@
+// Use this utility for color names - http://www.color-blindness.com/color-name-hue/
+
+/* Hue: White */
+$color-white-smoke: #F7F7F7;
+$color-gainsboro_1: #E1E1E1;
+$color-gainsboro_2: #DDDDDD;
+$color-silver: #BFBFBF;
+
+/* Hue: Red */
+$color-razzle-dazzle-rose: #FF33BE;
+$color-carnation-pink: #FF91DA;
+$color-venetian-red: #C90039;
+
+/* Hue: Black */
+$color-black-russian: #040405;
+$color-midnight-express: #010102;
+
+body {
+  padding: 2em;
+
+  .error-msg {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: $color-venetian-red;
+  }
+  .flex-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $color-gainsboro_2;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    .ft-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        &:not(.ft-header):nth-of-type(2n+1) {
+            background-color: $color-white-smoke;
+        }
+
+        &.ft-header {
+            font-weight: bold;
+            background-color: $color-razzle-dazzle-rose;
+            color: $color-white-smoke;
+        }
+    }
+
+    .ft-column {
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 6px;
+
+        @media screen and (min-width: 768px) {
+            padding: 10px;
+        }
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:first-child {
+            border-left: 1px solid $color-gainsboro_2;
+        }
+
+        &:last-child {
+            border-right: 1px solid $color-gainsboro_2;
+        }
+
+        &.ft-main {
+          flex-grow: 2;
+          word-wrap: break-word;
+
+          @media screen and (min-width: 768px) {
+              flex-grow: 3;
+          }
+      }
+    }
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .hide-error-msg {
+    visibility: hidden;
+  }
+
+  .drp-dwn-div {
+      cursor: pointer;
+    .header-txt {
+      position: relative;
+      display: inline-block;
+      &:hover, &:focus {
+        background-color: #2980B9;
+      }
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: $color-razzle-dazzle-rose;
+      min-width: 160px;
+      z-index: 1;
+      margin: 10px 0 0 -10px;
+      box-shadow: 0px 8px 10px 0px  $color-silver;
+  
+      .inner-dropdown-content {
+        display: none;
+        position: absolute;
+        z-index: 2;
+        min-width: 200px;
+        background-color: $color-razzle-dazzle-rose;
+        left: 100%;
+        top: 15%;
+        box-shadow: 2px 8px 10px 0px  $color-silver;
+        border-width: 0 0.5px 0 0.5px;
+        border-color: $color-gainsboro_2;
+        border-style: solid;
+
+        .dropdown-option {
+          color: $color-white-smoke;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+          text-transform: capitalize;
+          
+          &:hover {
+            background-color: $color-carnation-pink;
+          }
+        }
+      }
+
+      .change-data {
+        color: $color-white-smoke;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        
+        &:hover {
+          background-color: $color-carnation-pink;
+        }
+      }
+
+      &:hover {
+        .inner-dropdown-content {
+          display: block;
+        }
+      }
+
+      
+    }
+  }
+  
+  .show {
+    display:block  !important;
+  }
+}
+
+
+

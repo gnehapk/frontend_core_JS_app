@@ -1,0 +1,121 @@
+// Use this utility for color names - http://www.color-blindness.com/color-name-hue/
+
+/* Hue: White */
+$color-white-smoke: #F7F7F7;
+$color-gainsboro_1: #E1E1E1;
+$color-gainsboro_2: #DDDDDD;
+
+/* Hue: Red */
+$color-razzle-dazzle-rose: #FF33BE;
+
+body {
+  padding: 2em;
+
+  /*.table { 
+    width: 100%;
+    //box-shadow: 10px 10px #3368FF;
+
+    td {
+      text-align: left; 
+      padding: 0.75em;
+    }
+
+    th {
+      text-align: left; 
+      padding: 1em;
+      background-color: #FF33BE;
+      color: white;
+    }
+
+    tr {
+      border-bottom: 1px solid black;
+    }
+
+    .header {
+      padding: 8px;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    tr { 
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0.5em 0;
+      border: 1px solid rgba(3,3,3,0.2);
+    }
+    td, th {
+      flex: 1 1 150px;
+      border: 0.5px solid rgba(3,3,3,0.2);
+    }
+  }*/
+  .flex-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid $color-gainsboro_2;
+    font-size: 14px;
+
+    @media screen and (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    .ft-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+
+        &:not(.ft-header):nth-of-type(2n+1) {
+            background-color: $color-white-smoke;
+        }
+
+        &.ft-header {
+            font-weight: bold;
+            background-color: #FF33BE;
+            color: white;
+        }
+    }
+
+    .ft-column {
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 6px;
+
+        @media screen and (min-width: 768px) {
+            padding: 10px;
+        }
+
+        text-overflow: ellipsis;
+        overflow: hidden;
+
+        &:first-child {
+            border-left: 1px solid $color-gainsboro_2;
+        }
+
+        &:last-child {
+            border-right: 1px solid $color-gainsboro_2;
+        }
+
+        &.ft-main {
+          flex-grow: 2;
+          word-wrap: break-word;
+
+          @media screen and (min-width: 768px) {
+              flex-grow: 3;
+          }
+      }
+    }
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+}
+
+
+

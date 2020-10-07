@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Switch Table</title>
+  <link rel="stylesheet" type="text/css" href="./public/index.css">
+<link href="index.css" rel="stylesheet"></head>
+
+<body>
+  <main id="table">
+    <div class="error-msg hide-error-msg">Column field already present</div>
+    <h1>Switch Table</h1>
+    <div class="flex-table">
+      <div class="ft-row ft-header">
+        <div class="ft-column ft-main drp-dwn-div" data-col="0">
+          <span class="header-txt">User ID</span>
+          <div class="dropdown-content">
+            <a href="#" class="change-data">Change Data</a>
+            <div class="inner-dropdown-content">
+              <a href="#" class="dropdown-option">User ID(default)</a>
+              <a href="#" class="dropdown-option">Custom Field 1</a>
+              <a href="#" class="dropdown-option">Custom Field 2</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="ft-column drp-dwn-div" data-col="1">
+          <span class="header-txt">Family Name</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Family Name(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="2">
+          <span class="header-txt">Given Name</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Given Name(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="3">
+          <span class="header-txt">User Name</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">User Name(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="4">
+          <span class="header-txt">Programs</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Programs(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="5">
+          <span class="header-txt">Status</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Status(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="6">
+          <span class="header-txt">Avg. Session</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Avg. Session(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="7">
+          <span class="header-txt">Last active</span>
+          <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Last Active(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="8">
+            <span class="header-txt">Custom Field 1</span>
+            <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Custom Field 1(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 2</a>
+              </div>
+            </div>
+        </div>
+        <div class="ft-column drp-dwn-div" data-col="9">
+            <span class="header-txt">Custom Field 2</span>
+            <div class="dropdown-content">
+              <a href="#" class="change-data">Change Data</a>
+              <div class="inner-dropdown-content">
+                <a href="#" class="dropdown-option">Custom Field 2(default)</a>
+                <a href="#" class="dropdown-option">Custom Field 1</a>
+              </div>
+            </div>
+        </div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">0c32f834a7@example.edu</div>
+        <div class="ft-column">Rutherford</div>
+        <div class="ft-column">Kayleigh</div>
+        <div class="ft-column">KabeRuth</div>
+        <div class="ft-column">2</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:00</div>
+        <div class="ft-column">2018-08-17</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">8667ffbf61@example.edu</div>
+        <div class="ft-column">Pouros</div>
+        <div class="ft-column">Selina</div>
+        <div class="ft-column">Pou</div>
+        <div class="ft-column">1</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:02</div>
+        <div class="ft-column">2017-09-15</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">b9067a5741@example.edu</div>
+        <div class="ft-column">Hyatt</div>
+        <div class="ft-column">Miracle</div>
+        <div class="ft-column">Kiseki</div>
+        <div class="ft-column">1</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:03</div>
+        <div class="ft-column">2017-09-15</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">0c32f834a7@example.edu</div>
+        <div class="ft-column">Rutherford</div>
+        <div class="ft-column">Kayleigh</div>
+        <div class="ft-column">KabeRuth</div>
+        <div class="ft-column">2</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:00</div>
+        <div class="ft-column">2018-08-17</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">0c32f834a7@example.edu</div>
+        <div class="ft-column">Rutherford</div>
+        <div class="ft-column">Kayleigh</div>
+        <div class="ft-column">KabeRuth</div>
+        <div class="ft-column">2</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:00</div>
+        <div class="ft-column">2018-08-17</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+      <div class="ft-row">
+        <div class="ft-column ft-main">0c32f834a7@example.edu</div>
+        <div class="ft-column">Rutherford</div>
+        <div class="ft-column">Kayleigh</div>
+        <div class="ft-column">KabeRuth</div>
+        <div class="ft-column">2</div>
+        <div class="ft-column">Active</div>
+        <div class="ft-column">0:00</div>
+        <div class="ft-column">2018-08-17</div>
+        <div class="ft-column">Custom 1</div>
+        <div class="ft-column">Custom 2</div>
+      </div>
+    </div>
+  </main>
+<script type="text/javascript" src="bundle.js"></script></body>
+
+</html>

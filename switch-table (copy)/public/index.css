@@ -1,0 +1,87 @@
+/* Hue: White */
+/* Hue: Red */
+body {
+  padding: 2em;
+  /*.table { 
+    width: 100%;
+    //box-shadow: 10px 10px #3368FF;
+
+    td {
+      text-align: left; 
+      padding: 0.75em;
+    }
+
+    th {
+      text-align: left; 
+      padding: 1em;
+      background-color: #FF33BE;
+      color: white;
+    }
+
+    tr {
+      border-bottom: 1px solid black;
+    }
+
+    .header {
+      padding: 8px;
+      font-weight: bold;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    tr { 
+      display: flex; 
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin: 0.5em 0;
+      border: 1px solid rgba(3,3,3,0.2);
+    }
+    td, th {
+      flex: 1 1 150px;
+      border: 0.5px solid rgba(3,3,3,0.2);
+    }
+  }*/ }
+  body .flex-table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      body .flex-table {
+        font-size: 16px; } }
+    body .flex-table .ft-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: flex-start; }
+      body .flex-table .ft-row:not(.ft-header):nth-of-type(2n+1) {
+        background-color: #F7F7F7; }
+      body .flex-table .ft-row.ft-header {
+        font-weight: bold;
+        background-color: #FF33BE;
+        color: white; }
+    body .flex-table .ft-column {
+      flex-basis: 0;
+      flex-grow: 1;
+      padding: 6px;
+      text-overflow: ellipsis;
+      overflow: hidden; }
+      @media screen and (min-width: 768px) {
+        body .flex-table .ft-column {
+          padding: 10px; } }
+      body .flex-table .ft-column:first-child {
+        border-left: 1px solid #DDDDDD; }
+      body .flex-table .ft-column:last-child {
+        border-right: 1px solid #DDDDDD; }
+      body .flex-table .ft-column.ft-main {
+        flex-grow: 2;
+        word-wrap: break-word; }
+        @media screen and (min-width: 768px) {
+          body .flex-table .ft-column.ft-main {
+            flex-grow: 3; } }
+  body .hidden {
+    visibility: hidden; }
